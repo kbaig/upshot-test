@@ -29,7 +29,7 @@ To Recap, nice to haves are:
 
 Missing something import likeeee maybe a font?  (Open Sans, cough cough) You can grab it here:  https://fonts.google.com/specimen/Open+Sans 
 
-And yes, we know you can create this layout with using Javascript, but where's the fun in that (thank you React!). 
+And yes, we know you can create this layout without using Javascript, but where's the fun in that (thank you React!). 
 
 Got it? Got it. Then let's go!
 
