@@ -1,3 +1,6 @@
-body {
-  color: lightblue;
+.App {
+  .Section {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+  }
 }
