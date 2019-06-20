@@ -1,2 +1,16 @@
+@import '../../variables.scss';
+
 .Menu {
+  list-style-type: none;
+
+  font-family: $sansSerif;
+  font-weight: 700;
+  color: #2b2b2f;
+
+  > .ListItem {
+    margin-bottom: 0.5em;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
 }
