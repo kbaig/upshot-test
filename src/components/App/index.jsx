@@ -4,19 +4,19 @@ import './App.scss';
 
 import Helmet from '../Helmet';
 import Header from '../Header';
-// import Section from '../Section';
-// import Menu from '../Menu';
-// import Products from '../Products';
+import Section from '../Section';
+import Menu from '../Menu';
+import Products from '../Products';
 
 const App = () => (
   <>
     <Helmet />
     <div className='App'>
       <Header />
-      {/* <Section>
+      <Section>
         <Menu />
         <Products />
-      </Section> */}
+      </Section>
     </div>
   </>
 );
