@@ -28,3 +28,24 @@
   font-size: 3em;
   color: $white;
 }
+
+@media (max-width: $tablet) {
+  .Header__Hero {
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: $mobile) {
+  .Header {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+
+  .Header__Hero {
+    min-height: auto;
+    padding: 0;
+    padding-bottom: 10vh;
+    font-size: 2em;
+  }
+}
