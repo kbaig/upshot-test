@@ -10,6 +10,11 @@
 }
 
 .Nav__Logo {
+  &:hover {
+    opacity: 0.75;
+  }
+
+  transition: all 300ms ease-in-out;
 }
 
 .Nav__LogoImage {
@@ -23,6 +28,14 @@
   font-weight: 700;
   font-size: 1.125em;
   color: $white;
+
+  &:hover .Nav__ListItem {
+    opacity: 0.5;
+  }
+
+  &:hover .Nav__ListItem:hover {
+    opacity: 1;
+  }
 }
 
 .Nav__ListItem {
@@ -30,6 +43,25 @@
   &:last-of-type {
     margin-right: 0;
   }
+
+  position: relative;
+
+  ::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    height: 2px;
+    left: 0;
+    width: 0%;
+    background: $white;
+    transition: all 150ms ease-in-out;
+  }
+
+  &:hover ::after {
+    width: 100%;
+  }
+
+  transition: all 300ms ease-in-out;
 }
 
 .Nav__ListItemLink {
