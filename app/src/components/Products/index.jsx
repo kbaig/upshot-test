@@ -60,8 +60,8 @@ const data = [
   }
 ];
 
-const Products = () => (
-  <div className='Products'>
+const Products = ({ ...rest }) => (
+  <div className='Products' {...rest}>
     {data.map(product => (
       <Product key={product.id} {...product} />
     ))}
