@@ -6,7 +6,7 @@ import data from '../../data/nav';
 import logo from '../../assets/logo.svg';
 
 const Nav = ({ ...rest }) => {
-  const [expanded, setExpanded] = React.useState(true);
+  const [expanded, setExpanded] = React.useState(false);
 
   return (
     <>
