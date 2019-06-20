@@ -2,11 +2,14 @@ import React from 'react';
 
 import './Product.scss';
 
-const Product = ({ title, description, id }) => (
-  <div className='Product'>
-    <div>{title}</div>
-    <div>{description}</div>
-    <div>link to {`/products/${id}`}</div>
+const Product = ({ title, description, id, image: { src, alt }, ...rest }) => (
+  <div className='Product' {...rest}>
+    <img src={src} alt={alt} className='Product__Image' />
+    <h2 className='Product__Title'>{title}</h2>
+    <div className='Product__Description'>{description}</div>
+    <a className='Product__CTA' href={`/products/${id}`}>
+      BUY NOW
+    </a>
   </div>
 );
 

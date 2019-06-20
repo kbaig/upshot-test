@@ -1,7 +1,16 @@
 .App {
-  .Section {
+  > .Section {
+    margin: auto;
+
+    max-width: 1200px;
+
     display: grid;
     grid-template-columns: auto 1fr;
-    grid-column-gap: 1em;
+    grid-column-gap: 2em;
+
+    > .Menu {
+      margin-top: 1em;
+      align-self: start;
+    }
   }
 }

@@ -1,51 +1,69 @@
 import React from 'react';
 
 import './Products.scss';
+import bike from '../../assets/bike.jpg';
+import shoe from '../../assets/shoe.jpg';
+import watch from '../../assets/watch.jpg';
 
 import Product from '../Product';
 
 const data = [
   {
-    name: 'Title with Two Very Very Long Lines',
+    title: 'Title with Two Very Very Long Lines',
 
     description:
       'And a very long description to boot. Why bother describing something with so many words?',
-    id: 1
+    id: 1,
+    image: {
+      src: shoe,
+      alt: ''
+    }
   },
   {
-    name: 'One Short Title',
+    title: 'One Short Title',
     description:
       'And a very long description to boot. Why bother describing something with so many words?',
-    id: 2
+    id: 2,
+    image: {
+      src: watch,
+      alt: ''
+    }
   },
   {
-    name: 'One Short Title',
+    title: 'One Short Title',
     description: 'With a short description',
-    id: 3
+    id: 3,
+    image: { src: shoe, alt: '' }
   },
   {
-    name: 'Title with Two Very Very Long Lines',
+    title: 'Title with Two Very Very Long Lines',
     description: 'With a short description',
-    id: 4
+    id: 4,
+    image: { src: bike, alt: '' }
   },
   {
-    name: 'Title with Two Very Very Long Lines',
+    title: 'Title with Two Very Very Long Lines',
     description:
       'And a very long description to boot. Why bother describing something with so many words?',
-    id: 5
+    id: 5,
+    image: { src: shoe, alt: '' }
   },
   {
-    name: 'Title with Two Very Very Long Lines',
+    title: 'Title with Two Very Very Long Lines',
     description:
       'And a very long description to boot. Why bother describing something with so many words?',
-    id: 6
+    id: 6,
+    image: {
+      src: watch,
+      alt: ''
+    }
   }
 ];
 
 const Products = () => (
   <div className='Products'>
-    {data.map(({ name, description, id }) => (
-      <Product key={id} name={name} description={description} id={id} />
+    {data.map(product => (
+      <Product key={product.id} {...product} />
     ))}
   </div>
 );
