@@ -1,2 +1,38 @@
+@import '../../variables.scss';
+
 .Nav {
+  margin: auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
+.Nav__Logo {
+}
+
+.Nav__LogoImage {
+  height: 100px;
+}
+
+.Nav__List {
+  list-style-type: none;
+  display: flex;
+  font-family: $sansSerifCondensed;
+  font-weight: 700;
+  font-size: 1.125em;
+  color: $white;
+}
+
+.Nav__ListItem {
+  margin-right: 3em;
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.Nav__ListItemLink {
+  text-decoration: none;
+  color: $white;
 }

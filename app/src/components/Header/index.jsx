@@ -2,9 +2,12 @@ import React from 'react';
 
 import './Header.scss';
 
+import Nav from '../Nav';
+
 const Header = () => (
   <header className='Header'>
-    <h1>THIS IS A HEADLINE.</h1>
+    <Nav />
+    <h1 className='Header__Hero'>THIS IS A HEADLINE.</h1>
   </header>
 );
 
