@@ -2,10 +2,6 @@ import React from 'react';
 
 import './Section.scss';
 
-const Section = ({ children, ...rest }) => (
-  <section className='Section' {...rest}>
-    {children}
-  </section>
-);
+const Section = ({ ...rest }) => <section className='Section' {...rest} />;
 
 export default Section;
