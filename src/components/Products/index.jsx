@@ -9,7 +9,7 @@ import Product from '../Product';
 
 const data = [
   {
-    title: 'Title with Two Very Very Long Lines',
+    title: 'Title with Two Very Very Long Long Lines',
 
     description:
       'And a very long description to boot. Why bother describing something with so many words?',
@@ -42,14 +42,14 @@ const data = [
     image: { src: bike, alt: '' }
   },
   {
-    title: 'Title with Two Very Very Long Lines',
+    title: 'Title with Two Very Very Long Long Lines',
     description:
       'And a very long description to boot. Why bother describing something with so many words?',
     id: 5,
     image: { src: shoe, alt: '' }
   },
   {
-    title: 'Title with Two Very Very Long Lines',
+    title: 'Title with Two Very Very Long Long Lines',
     description:
       'And a very long description to boot. Why bother describing something with so many words?',
     id: 6,
