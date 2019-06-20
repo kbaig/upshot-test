@@ -5,8 +5,8 @@ import data from '../../data/hero';
 
 import Nav from '../Nav';
 
-const Header = () => (
-  <header className='Header'>
+const Header = ({ ...rest }) => (
+  <header className='Header' {...rest}>
     <Nav />
     <h1 className='Header__Hero'>{data.hero}</h1>
   </header>
