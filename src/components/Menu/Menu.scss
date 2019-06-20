@@ -1,0 +1,20 @@
+@import '../../variables.scss';
+
+.Menu {
+  list-style-type: none;
+  font-family: $sansSerif;
+  font-weight: 700;
+  color: $boldText;
+}
+
+.Menu__ListItem {
+  margin-bottom: 1em;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.Menu__ListItemLink {
+  text-decoration: none;
+  color: inherit;
+}
