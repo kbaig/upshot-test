@@ -6,11 +6,11 @@ import data from '../../data/products';
 import Product from '../Product';
 
 const Products = ({ ...rest }) => (
-  <div className='Products' {...rest}>
+  <ul className='Products' {...rest}>
     {data.map(product => (
       <Product key={product.id} {...product} />
     ))}
-  </div>
+  </ul>
 );
 
 export default Products;
