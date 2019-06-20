@@ -1,13 +1,14 @@
 import React from 'react';
 
 import './Header.scss';
+import data from '../../data/hero';
 
 import Nav from '../Nav';
 
 const Header = () => (
   <header className='Header'>
     <Nav />
-    <h1 className='Header__Hero'>THIS IS A HEADLINE.</h1>
+    <h1 className='Header__Hero'>{data.hero}</h1>
   </header>
 );
 

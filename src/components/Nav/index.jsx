@@ -1,26 +1,9 @@
 import React from 'react';
 
 import './Nav.scss';
-import logo from '../../assets/logo.svg';
+import data from '../../data/nav';
 
-const data = [
-  {
-    content: 'Home',
-    path: '/home'
-  },
-  {
-    content: 'About',
-    path: '/about'
-  },
-  {
-    content: 'Products',
-    path: '/products'
-  },
-  {
-    content: 'Help',
-    path: '/help'
-  }
-];
+import logo from '../../assets/logo.svg';
 
 const Nav = ({ ...rest }) => (
   <nav className='Nav' {...rest}>
