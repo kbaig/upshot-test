@@ -26,6 +26,7 @@ const Nav = ({ ...rest }) => {
         <button
           className='Nav__HamburgerButton'
           onClick={() => setExpanded(!expanded)}
+          role={expanded ? 'collapse' : 'expand'}
         >
           <div className='Nav__HamburgerIcon' />
         </button>
