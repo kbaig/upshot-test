@@ -12,7 +12,7 @@ const Nav = ({ ...rest }) => {
     <>
       <nav className={`Nav${expanded ? ' Nav--expanded' : ''}`} {...rest}>
         <div className='Nav__Container'>
-          <a className='Nav__Logo' href='/' role='home'>
+          <a className='Nav__Logo' href='/'>
             <img src={logo} alt='home' className='Nav__LogoImage' />
           </a>
           <ul className='Nav__List'>
