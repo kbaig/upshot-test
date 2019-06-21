@@ -5,7 +5,7 @@
 - Add a `Switch` from `react-router` to easily enable 404 pages
 - Open Graph tags and other meta tags in head via `react-helmet` (basic integration already in place)
 - Write tests
-- Edit manifest.json for PWA support
+- Edit `manifest.json` for PWA support
 - Process images - currently far too large
 - SSR - at build time would likely be ideal here
 
