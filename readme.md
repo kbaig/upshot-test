@@ -8,6 +8,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Open Graph tags and other meta tags in head via `react-helmet` (basic integration already in place)
 - Write tests
 - Edit manifest.json for PWA support
+- Process images - currently far too large
 
 ## Available Scripts
 
