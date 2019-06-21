@@ -7,6 +7,7 @@
 - Write tests
 - Edit manifest.json for PWA support
 - Process images - currently far too large
+- SSR - at build time would likely be ideal here
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
