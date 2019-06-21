@@ -1,5 +1,3 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 [Live Site](https://upshot-test.herokuapp.com)
 
 # Next Steps
@@ -9,6 +7,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Write tests
 - Edit manifest.json for PWA support
 - Process images - currently far too large
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
@@ -30,6 +30,8 @@ Builds the app for production to the `build` folder.<br>
 ### `npm run eject`
 
 If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+<hr />
 
 # Assignment
 
