@@ -11,25 +11,27 @@ const Nav = ({ ...rest }) => {
   return (
     <>
       <nav className={`Nav${expanded ? ' Nav--expanded' : ''}`} {...rest}>
-        <a className='Nav__Logo' href='/'>
-          <img src={logo} alt='home' className='Nav__LogoImage' />
-        </a>
-        <ul className='Nav__List'>
-          {data.map(({ content, path }, i) => (
-            <li key={i} className='Nav__ListItem'>
-              <a href={path} className='Nav__ListItemLink'>
-                {content}
-              </a>
-            </li>
-          ))}
-        </ul>
-        <button
-          className='Nav__HamburgerButton'
-          onClick={() => setExpanded(!expanded)}
-          role={expanded ? 'collapse' : 'expand'}
-        >
-          <div className='Nav__HamburgerIcon' />
-        </button>
+        <div className='Nav__Container'>
+          <a className='Nav__Logo' href='/'>
+            <img src={logo} alt='home' className='Nav__LogoImage' />
+          </a>
+          <ul className='Nav__List'>
+            {data.map(({ content, path }, i) => (
+              <li key={i} className='Nav__ListItem'>
+                <a href={path} className='Nav__ListItemLink'>
+                  {content}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <button
+            className='Nav__HamburgerButton'
+            onClick={() => setExpanded(!expanded)}
+            role={expanded ? 'collapse' : 'expand'}
+          >
+            <div className='Nav__HamburgerIcon' />
+          </button>
+        </div>
       </nav>
       <div
         className='Nav__CollapseSidebarOverlay'

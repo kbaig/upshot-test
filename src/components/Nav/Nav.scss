@@ -8,6 +8,9 @@
 .Nav {
   margin: auto;
   max-width: 1200px;
+}
+
+.Nav__Container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -248,11 +251,11 @@
   }
 
   .Nav--expanded {
-    // position: fixed;
-    // top: 0;
-    // right: 0;
-    // height: 100vh;
-    // width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
 
     .Nav__List {
       display: flex;
